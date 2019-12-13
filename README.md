@@ -2,6 +2,18 @@
 # fazz-swagger 3.0
 Documentation tools to help creates API documentations with Swagger 3.0 ([OpenAPI 3.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)) easier.
 
+## Getting Started
+Install fazzswagger
+```
+go get github.com/payfazz/fazz-swagger/cmd/fazzswagger
+```
+
+## Available Commands
+### Compile
+```
+fazzswagger compile ~/YOUR_PROJECT/DOC_DIRECTORY
+```
+
 ## Features
 `fazz-swagger` lets you split OAS3 Standard Yaml File to smaller components for easier documentations and readability. 
 
