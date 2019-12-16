@@ -1,0 +1,72 @@
+openapi: 3.0.1
+info:
+  title: Example API
+  description: Sample API Doc
+  version: 1.0.0
+servers:
+- url: http://swagger.io
+tags:
+- name: default
+- name: admin
+  description: Authorized for Admin Only
+externalDocs:
+  url: http://swagger.io
+  description: Decription for External Docs address
+paths:
+  /v1/internal/users/me:
+    get:
+      operationId: me
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Me'
+          description: successful operation
+      summary: Me
+      tags:
+      - default
+components:
+  schemas:
+    Me:
+      properties:
+        email:
+          type: string
+        fullName:
+          type: string
+        phone:
+          type: string
+        user:
+          $ref: '#/components/schemas/user'
+        usergroup:
+          items:
+            $ref: '#/components/schemas/group'
+          type: array
+        username:
+          type: string
+      type: object
+    group:
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+      type: object
+    user:
+      properties:
+        active:
+          type: boolean
+        id:
+          type: string
+        userType:
+          type: string
+        username:
+          type: string
+      type: object
+    withList:
+      properties:
+        count:
+          type: number
+        hasNext:
+          type: boolean
+      type: object

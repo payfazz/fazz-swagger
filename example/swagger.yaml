@@ -1,0 +1,14 @@
+openapi: 3.0.1
+info:
+  title: Example API
+  description: 'Sample API Doc'
+  version: 1.0.0
+externalDocs:
+  description: Decription for External Docs address
+  url: http://swagger.io #change to external docs url
+servers:
+  - url: http://swagger.io #change to your server name
+tags:
+  - name: default
+  - name: admin
+    description: Authorized for Admin Only

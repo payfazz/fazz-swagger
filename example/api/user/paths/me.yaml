@@ -1,0 +1,13 @@
+/v1/internal/users/me:
+  get:
+    tags:
+      - default
+    summary: Me
+    operationId: me
+    responses:
+      200:
+        description: successful operation
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Me'

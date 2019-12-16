@@ -1,0 +1,7 @@
+withList:
+  type: object
+  properties:
+    count:
+      type: number
+    hasNext:
+      type: boolean
