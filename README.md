@@ -1,5 +1,5 @@
 
-# fazz-swagger 3.0
+# fazz-swagger
 Documentation tools to help creates API documentations with Swagger 3.0 ([OpenAPI 3.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)) easier.
 
 ## Getting Started
@@ -10,6 +10,7 @@ go get github.com/payfazz/fazz-swagger/cmd/fazzswagger
 
 ## Available Commands
 ### Compile
+Compile will generate fazz-swagger.yaml file that contain of OAS3 Swagger File
 ```
 fazzswagger compile ~/YOUR_PROJECT/DOC_DIRECTORY
 ```
