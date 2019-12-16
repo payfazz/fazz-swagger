@@ -11,12 +11,14 @@ type fazzSwagger struct {
 	basename string
 }
 
+// NewFazzSwagger create base command as fazzswagger
 func NewFazzSwagger() *fazzSwagger {
 	return &fazzSwagger{
 		basename: "fazzswagger",
 	}
 }
 
+// Execute is a function that executed first time upon calling base cmd
 func (fs *fazzSwagger) Execute() {
 	rootCmd := &cobra.Command{
 		Use:   NewFazzSwagger().basename,

@@ -1,5 +1,6 @@
 package value
 
+// ComponentType is enum to defined type of OAS3's Components
 type ComponentType string
 
 const (

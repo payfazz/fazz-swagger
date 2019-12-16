@@ -1,5 +1,6 @@
 package model
 
+// Swagger is a struct to define OAS3's Data Structure
 type Swagger struct {
 	OpenApi      string                  `yaml:"openapi,omitempty"`
 	Info         *Info                   `yaml:"info,omitempty"`

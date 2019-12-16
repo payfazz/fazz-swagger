@@ -1,5 +1,6 @@
 package model
 
+// Component is a struct to define OAS3's Component Data Type
 type Component struct {
 	Schemas         map[string]interface{} `yaml:"schemas,omitempty"`
 	Responses       map[string]interface{} `yaml:"responses,omitempty"`

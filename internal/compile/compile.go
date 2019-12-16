@@ -123,6 +123,7 @@ func createComponentItem(filePaths string, componentType value.ComponentType) (m
 	return component, nil
 }
 
+// Compile is a function to compile Doc files to single
 func Compile(filePaths string) {
 	swagger, err := updateSwaggerFile(filePaths)
 	if nil != err {
